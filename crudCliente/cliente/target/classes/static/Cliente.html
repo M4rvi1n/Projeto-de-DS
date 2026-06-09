@@ -222,9 +222,7 @@
             listarClientes();
         });
 
-        // =======================================
-        // EDITAR CLIENTE
-        // =======================================
+       
         async function editarCliente(id) {
             const response = await fetch(`${api}/${id}`);
             const cliente = await response.json();
@@ -253,17 +251,13 @@
             }
         }
 
-        // =======================================
-        // LIMPAR FORMULÁRIO
-        // =======================================
+
         function limparFormulario() {
             document.getElementById("formCliente").reset();
             document.getElementById("id").value = "";
         }
 
-        // =======================================
-        // INICIALIZA TABELA
-        // =======================================
+       
         listarClientes();
     </script>
 </body>
